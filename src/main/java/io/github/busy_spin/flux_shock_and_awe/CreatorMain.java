@@ -49,7 +49,7 @@ public class CreatorMain {
 
         for (int i = 0; i < 20; i++) {
             int id = i + 1;
-            flux.subscribe(new BaseSubscriber<String>() {
+            flux.subscribe(new BaseSubscriber<>() {
                 @Override
                 protected void hookOnNext(String value) {
                     log.info("### {}", value);
