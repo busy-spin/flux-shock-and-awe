@@ -52,13 +52,13 @@ public class CreatorMain {
             flux.subscribe(new BaseSubscriber<String>() {
                 @Override
                 protected void hookOnNext(String value) {
-                    log.info("{}", value);
+                    log.info("### {}", value);
                     request(10);
                 }
 
                 @Override
                 protected void hookOnSubscribe(Subscription subscription) {
-                    super.hookOnSubscribe(subscription);
+                    request(1);
                 }
             });
         }
