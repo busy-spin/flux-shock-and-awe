@@ -1,5 +1,65 @@
-target
-.idea
+# Gradle-related files
+.gradle/
+build/
+out/
+
+# IntelliJ IDEA-specific files
+.idea/
 *.iml
 *.ipr
 *.iws
+
+# Log files
+*.log
+*.stacktrace
+*.out
+*.hprof
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# JAR files
+*.jar
+*.war
+*.ear
+
+# Temporary files
+*.class
+*.swp
+*.swo
+*.tmp
+*.bak
+*.orig
+*.rej
+
+# Generated files
+generated/
+
+# Lombok configuration (optional)
+lombok.config
+
+# Node and frontend (if applicable)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage reports
+coverage/
+*.lcov
+
+# IDE-specific settings
+# IntelliJ IDEA-specific files are already covered above
+# Add entries for other IDEs if used (e.g., Eclipse, VSCode)
+.vscode/
+.classpath
+.project
+
+# Mac-specific files
+.AppleDouble
+.LSOverride
+
+# Gradle wrapper files
+gradle/wrapper/gradle-wrapper.jar
+
